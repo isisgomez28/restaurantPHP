@@ -53,6 +53,12 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 
+$route['dishes']['get'] = 'dishes/index';
+$route['dishes/:num']['get'] = 'dishes/find/$1';
+$route['dishes']['post'] = 'dishes/index';
+$route['dishes/:num']['put'] = 'dishes/index/$1';
+$route['dishes/:num']['delete'] = 'dishes/index/$1';
+
 /*
 | -------------------------------------------------------------------------
 | Sample REST API Routes
